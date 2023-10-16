@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&family=Inter:400,800&family=Poppins:400,800');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #F8FAFB;
+}
+.basic-info h5,
+.basic-info h1 {
+      color: #4B4B4D;
+}
+.basic-info hr {
+
+}
+.header{
+    padding: 0px 17px;
+}
+.sidebar {
+    width: 80px;
+    background: #1B94CA;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    position: fixed;
+    padding-top: 8px;
+}
+.breadcrumbs{
+    padding: 0px 21px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 70px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px 0;
+}
+
+.menu a,
+.logout a
+ {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: inherit;
+}
+
+.custom-bg-color{
+    border-top: 1px solid #ddd;
+    background-color: #ffffff00;
+}
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.content .header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .header h1{
+	color: #4B4B4D;
+}
+.active-user{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.active-user .profile{
+	background-color: grey!important;
+	width:50px;
+	height:50px;
+	float: left;
+	border-radius: 50%;
+}
+
+.content span:first-child {
+    color: #2196F3;
+}
+
+.breadcrumbs span + span{
+    color:#6E6E91;
+}
+
+/*Form*/
+.form-content{
+    height: 100%;
+    background: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-content form > div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-content form > div:first-child button{
+    width: 102px;
+    height: 40px;
+    top: 171px;
+    left: 1136px;
+    border-radius: 7px;
+    border: 1px;
+    cursor: pointer;
+}
+
+.form-content form > div:first-child button+button{
+    background: #1B94CA;
+    color: #fff;
+}
+
+.user-bio{
+    padding: 30px 0px;
+}
+.user-input{
+    display: flex;
+}
+.user-input input{
+    width: 25%;
+    height: 53px;
+    top: 281px;
+    left: 148px;
+    border-radius: 7px;
+    border: 1px solid #EAEAEA;
+    margin: 4px;
+}
+
+.user-profile > div:first-child{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    clear: both;
+}
+
+.user-profile > div:nth-child(2){
+    width: 65%;
+    float: left;
+        padding: 30px 0px;
+}
+
+.user-profile > div:nth-child(2) > div:first-child{
+    width: 60%;
+    text-align: center;
+}
+.user-profile > div:nth-child(2) > div:first-child img{
+    width: 58%;
+    text-align: center;
+}
+
+.user-role{
+    padding: 30px 0px;
+}
+.user-role > div:first-child > div{
+    display:flex
+    
+}
+
+.user-role input{
+    height: 53px;
+    width: 50%;
+    border-radius: 7px;
+    border: 1px solid #EAEAEA;
+    margin: 4px;
+}
+.traveling input[type='checkbox']{
+    width: 25px;
+    height: 24px;
+    top: 1036px;
+    left: 148px;
+    border-radius: 3px;
+}
+
+.traveling p {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Query for Mobile Styles */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+    }
+
+    .menu a i, .logout a i {
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar.active {
+        transform: translateX(-250px);
+    }
+
+    .active-user {
+	    display: flex;
+	    align-items: center;
+	    justify-content: flex-start;
+	    width:100%;
+	    margin-bottom: 20px;
+	}
+	.content .header{
+		display: block;
+	}
+    .form-content form > div:first-child{
+        display: unset;
+    }
+    .form-content form .user-bio div:first-child {
+        width: 100%;
+    }
+
+    .user-input{
+        display: unset;
+    }
+    .user-input input{
+        width: 100%;
+    }
+
+    .user-profile > div:first-child {
+        width: 100%;
+    }
+    .user-profile > div:nth-child(2) {
+        width: 100%!important;
+    }
+    .user-profile > div:nth-child(2) > div:first-child {
+        width: 100%!important;
+    }
+}
