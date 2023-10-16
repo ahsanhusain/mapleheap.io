@@ -16,7 +16,13 @@ $(document).ready(function() {
             },
             "emptyTable": "No data available in table"
         },
-        // "responsive": true
+        "scrollX": true, // Enable horizontal scrolling
+        "columnDefs": [
+            {
+                "targets": "_all", // Apply to all columns
+                "className": "dt-nowrap" // Prevent text wrapping
+            }
+        ]
     });
     // Dynamically add the "Add Title" button to the search input
     var $searchInput = $('div.dataTables_filter input');
