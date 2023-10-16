@@ -12,6 +12,10 @@ body {
 
 .logo{
   text-align: center;
+  width: 50%;
+}
+.logo img{
+  width:100%;
 }
 
 .form-container .logo {
@@ -128,6 +132,9 @@ body {
   .form-container form{
     width: 90%;
   }
+  .logo img {
+    width: 100%!important;
+  }
 }
 
 /* Tablet */
@@ -141,11 +148,17 @@ body {
   .form-container form{
     width: 70%;
   }
+  .logo img {
+    width: 100%!important;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1025px) {
   .overlay-container{
     display: block!important;
+  }
+  .logo img {
+    width: 40%!important;
   }
 }

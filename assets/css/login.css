@@ -12,7 +12,9 @@ body {
 .logo{
   width: 50%;
 }
-
+.logo img{
+  width:100%;
+}
 .form-container .logo {
   padding: 50px 50px 0px 50px;
 }
