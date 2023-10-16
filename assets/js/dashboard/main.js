@@ -34,9 +34,14 @@ $(document).ready(function() {
 
     $('#example th').css('text-align', 'left');
     $('#example th').css('color', '#A8A8BD');
+    $('#example th').css('font-weight', 'normal');
     $('#example td').css('padding', '10px');
     $('#example td').css('color', '#4B4B4D');
 
+    table.on('order.dt', function () {
+        // table.cells().nodes().to$().removeClass('sorting_1 even odd');
+    });
+    table.cells().nodes().to$().addClass('custom-bg-color');
     function updatePagination() {
         var paginationControls = $('.dataTables_paginate').clone();
         $('.dataTables_paginate').css('display', 'none');

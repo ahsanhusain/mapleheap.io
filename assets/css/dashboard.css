@@ -6,7 +6,9 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #F1F1F4;
 }
-
+.header{
+    padding: 0px 17px;
+}
 .sidebar {
     width: 80px;
     background: #1B94CA;
@@ -14,6 +16,10 @@ body {
     text-align: center;
     height: 100vh;
     position: fixed;
+    padding-top: 8px;
+}
+.breadcrumbs{
+    padding: 0px 21px;
 }
 
 .content {
@@ -46,6 +52,10 @@ body {
     width: inherit;
 }
 
+.custom-bg-color{
+    border-top: 1px solid #ddd;
+    background-color: #ffffff00;
+}
 .menu-toggle {
     display: none;
     position: fixed;
@@ -67,7 +77,6 @@ body {
 	display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 10%;
 }
 .active-user .profile{
 	background-color: grey!important;
