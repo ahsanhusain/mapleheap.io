@@ -263,6 +263,9 @@ body {
     }
     .form-content {
          margin: 0px; 
-         padding: 0px; 
+         padding: 5px; 
+    }
+    .user-profile > div:nth-child(2) > div:first-child img {
+        width: 100%;
     }
 }
