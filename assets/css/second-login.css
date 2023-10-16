@@ -80,7 +80,8 @@ body {
   background: #FFF;
   width: 100%;
   flex-shrink: 0;
-  padding: 18px 0px;
+  padding: 18px 6px;
+  box-sizing: border-box;
 }
 .form-container input + input {
     margin-top: 10px;
