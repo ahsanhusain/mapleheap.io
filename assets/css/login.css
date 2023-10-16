@@ -9,6 +9,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.logo{
+  width: 50%;
+}
+
 .form-container .logo {
   padding: 50px 50px 0px 50px;
 }
@@ -185,6 +189,9 @@ body {
   .form-container form{
     width: 90%;
   }
+  .logo{
+    width: 100%;
+  }
 }
 
 /* Tablet */
@@ -197,6 +204,9 @@ body {
   }
   .form-container form{
     width: 90%;
+  }
+  .logo{
+    width: 100%;
   }
 }
 
