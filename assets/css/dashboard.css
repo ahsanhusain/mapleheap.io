@@ -297,4 +297,8 @@ footer{
 	    height: unset;
 	}
 
+    .counts {
+        width: 100%;
+        float: unset; 
+    }
 }
