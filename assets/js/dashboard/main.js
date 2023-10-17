@@ -37,11 +37,11 @@ $(document).ready(function() {
     $searchInput.css('padding', '0.375rem 0.75rem');
     $searchInput.css('line-height', '1.8');
 
-    $('#example th').css('text-align', 'left');
-    $('#example th').css('color', '#A8A8BD');
-    $('#example th').css('font-weight', 'normal');
-    $('#example td').css('padding', '10px');
-    $('#example td').css('color', '#4B4B4D');
+    $('.dataTable tr th').css('text-align', 'left');
+    $('.dataTable th').css('color', '#A8A8BD');
+    $('.dataTable th').css('font-weight', 'normal');
+    $('.dataTable td').css('padding', '10px');
+    $('.dataTable td').css('color', '#4B4B4D');
 
     table.cells().nodes().to$().addClass('custom-bg-color');
     function updatePagination() {
