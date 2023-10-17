@@ -86,7 +86,7 @@ body {
 	border-radius: 50%;
 }
 
-.content span:first-child {
+.content > .breadcrumbs > span:first-child {
     color: #2196F3;
 }
 
@@ -245,7 +245,15 @@ td div:first-child{
 	background: var(--grey-0, #FFF);
 	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
-
+footer span{
+    width:100%;
+    text-align: center;
+    color: #4B4B4D;
+}
+footer{
+    width:100%;
+    text-align: center;
+}
 /* Media Query for Mobile Styles */
 
 @media (max-width: 768px) {

@@ -121,6 +121,16 @@ body {
     align-items: center;
 }
 
+footer span{
+    width:100%;
+    text-align: center;
+    color: #4B4B4D;
+}
+footer{
+    width:100%;
+    text-align: center;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .overlay-container{

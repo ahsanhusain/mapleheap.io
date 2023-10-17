@@ -93,7 +93,7 @@ body {
 	border-radius: 50%;
 }
 
-.content span:first-child {
+.content > .breadcrumbs span:first-child {
     color: #2196F3;
 }
 
@@ -168,7 +168,7 @@ body {
     text-align: center;
 }
 .user-profile > div:nth-child(2) > div:first-child img{
-    width: 58%;
+    width: 70%;
     text-align: center;
 }
 
@@ -200,6 +200,15 @@ body {
 .traveling p {
     display: flex;
     align-items: center;
+}
+footer span{
+    width:100%;
+    text-align: center;
+    color: #4B4B4D;
+}
+footer{
+    width:100%;
+    text-align: center;
 }
 
 /* Media Query for Mobile Styles */
