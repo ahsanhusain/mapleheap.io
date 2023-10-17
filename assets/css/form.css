@@ -137,7 +137,8 @@ body {
 .user-input{
     display: flex;
 }
-.user-input input{
+.user-input input,
+.user-bio select{
     width: 25%;
     height: 53px;
     top: 281px;
@@ -267,7 +268,8 @@ footer{
     .user-role > div:first-child > div {
          display: unset; 
     }
-    .user-role input {
+    .user-role input,
+    .user-bio select {
         width: 100%;
     }
     .form-content {
