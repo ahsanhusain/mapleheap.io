@@ -110,7 +110,7 @@ body {
   width: 100%;
   z-index: 2;
   height: 100%;
-  overflow: hidden;
+/*  overflow: hidden;*/
 }
 
 .log-in-container > div + div {
