@@ -69,6 +69,28 @@ $(document).ready(function() {
     }
     
     attachCustomPaginationHandlers();
+
+        // Attach a click event to the 3-dot menu icon in the action column
+    $('#example tbody').on('click', '.three-dots', function (e) {
+      e.stopPropagation(); // Prevent row selection when clicking the menu icon
+
+      // Get the corresponding DataTable row
+      var row = table.row($(this).closest('tr'));
+
+      // Find the menu within the row
+      var menu = row.node().querySelector('.menu-action');
+
+      // Hide all other menus and toggle the visibility of the menu
+      $('.menu-action').not(menu).hide();
+      $(menu).toggle();
+    });
+
+    // Close the menu when clicking outside of it
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.menu-action').length) {
+        $('.menu-action').hide();
+      }
+    });
 });
 $(document).on('click', '#add-title-button', function() {
     alert('Add Title button clicked');
